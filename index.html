@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Nakshatra Nutrition</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
@@ -11,7 +20,6 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,sans-serif;
 }
 
 html{
@@ -19,300 +27,323 @@ html{
 }
 
 body{
-    background:#faf5ef;
-    color:#4b382a;
-    line-height:1.7;
+    background:#faf6f1;
+    color:#4e3b31;
+    font-family:'Montserrat',sans-serif;
+    line-height:1.8;
 }
-
-/* Navigation */
 
 nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 10%;
-    background:white;
+    background:#faf6f1;
+    padding:25px;
     position:sticky;
     top:0;
-    box-shadow:0 2px 8px rgba(0,0,0,0.05);
-}
-
-.logo{
-    font-size:24px;
-    font-weight:bold;
+    border-bottom:1px solid #e7d8c8;
 }
 
 nav ul{
     display:flex;
-    gap:25px;
+    justify-content:center;
+    gap:40px;
     list-style:none;
+    flex-wrap:wrap;
 }
 
 nav a{
     text-decoration:none;
-    color:#5d4037;
+    color:#4e3b31;
+    font-weight:500;
 }
-
-/* Hero */
 
 header{
     text-align:center;
-    padding:100px 10%;
-    background:linear-gradient(#efe2d1,#faf5ef);
+    padding:90px 20px;
 }
 
-.profile{
-    width:180px;
-    height:180px;
+.hero-image{
+    width:300px;
+    height:300px;
     border-radius:50%;
     object-fit:cover;
+    border:8px solid white;
+    box-shadow:0 20px 40px rgba(0,0,0,0.1);
+}
+
+h1,h2,h3{
+    font-family:'Cormorant Garamond',serif;
+}
+
+h1{
+    font-size:75px;
+    margin-top:25px;
+}
+
+h2{
+    font-size:50px;
     margin-bottom:25px;
 }
 
-header h1{
-    font-size:48px;
-    margin-bottom:15px;
+h2::after{
+    content:"";
+    display:block;
+    width:70px;
+    height:2px;
+    background:#c8a97e;
+    margin-top:10px;
 }
-
-header p{
-    max-width:700px;
-    margin:auto;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:30px;
-    padding:14px 30px;
-    border-radius:30px;
-    background:#8b6b61;
-    color:white;
-    text-decoration:none;
-}
-
-/* Sections */
 
 section{
     padding:80px 10%;
 }
 
-h2{
-    margin-bottom:25px;
-}
-
 .cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
 }
 
 .card{
     background:white;
-    padding:25px;
-    border-radius:20px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+    transition:0.3s;
 }
 
-.about{
-    background:#f4e8db;
+.card:hover{
+    transform:translateY(-10px);
 }
 
-/* Testimonials */
-
-.testimonial{
-    margin-bottom:20px;
-    padding:25px;
-    background:white;
-    border-radius:15px;
+.btn{
+    display:inline-block;
+    background:#c8a97e;
+    color:white;
+    padding:15px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    margin-top:25px;
 }
 
-/* FAQ */
-
-details{
-    background:white;
-    padding:18px;
-    margin-bottom:15px;
-    border-radius:12px;
+.btn:hover{
+    background:#9c7b5a;
 }
 
-summary{
+input{
+    width:280px;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #ddd;
+}
+
+button{
+    background:#c8a97e;
+    color:white;
+    border:none;
+    padding:15px 25px;
+    border-radius:10px;
     cursor:pointer;
-    font-weight:bold;
 }
-
-/* Instagram */
-
-.instagram{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:15px;
-}
-
-.box{
-    height:200px;
-    border-radius:15px;
-    background:#dcc7aa;
-}
-
-/* Footer */
 
 footer{
+    background:#e7d8c8;
     text-align:center;
-    padding:40px;
-    background:#5d4037;
-    color:white;
+    padding:50px;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+section,
+header{
+    animation:fadeIn 1s ease;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <nav>
-    <div class="logo">Nakshatra Nutrition</div>
 
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#programmes">Programmes</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#faq">FAQs</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#programmes">Programmes</a></li>
+<li><a href="#bmi">BMI Calculator</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
 </nav>
 
 <header>
 
-    <!-- Replace with your own image -->
-    <img src="your-photo.jpg" class="profile">
+<img src="nakshatra.jpg" class="hero-image">
 
-    <h1>Fuel Your Body, Nourish Your Life</h1>
+<h1>Nakshatra Nutrition</h1>
 
-    <p>
-        Personalised nutrition plans designed to help you
-        build sustainable habits and achieve long-term wellness.
-    </p>
+<p>
 
-    <a href="#contact" class="btn">Book a Consultation</a>
+Evidence-based nutrition designed to help you build sustainable habits, improve your energy levels, optimise your health, and create a healthier relationship with food.
+
+</p>
+
+<a class="btn" href="https://wa.me/916366443170">
+
+Book a consultation
+
+</a>
 
 </header>
 
-<section class="about" id="about">
+<section id="about">
 
-    <h2>About Me</h2>
+<h2>About Me</h2>
 
-    <p>
-        Hello! I'm Nakshatra, a nutritionist passionate about
-        helping people build healthier lifestyles through
-        evidence-based nutrition.
+<p>
 
-        Growing up in a family of yoga teachers and Ayurvedic
-        practitioners inspired me to understand the connection
-        between food, movement and overall well-being.
+Hello! I'm Nakshatra Suroshi.
 
-        My goal is to make healthy eating simple, enjoyable and
-        sustainable.
-    </p>
+Inspired by my parents, who are yoga teachers and Ayurvedic experts, I developed a deep passion for health, nutrition, and holistic wellness. Today, I combine evidence-based nutrition with sustainable lifestyle practices to help people achieve their health goals while building a healthier relationship with food.
+
+</p>
 
 </section>
 
 <section id="programmes">
 
-    <h2>Programmes</h2>
+<h2>Signature Programmes</h2>
 
-    <div class="cards">
+<div class="cards">
 
-        <div class="card">
-            <h3>Weight Management</h3>
-            <p>Balanced plans for healthy and sustainable weight loss.</p>
-        </div>
+<div class="card">
 
-        <div class="card">
-            <h3>PCOS Management</h3>
-            <p>Nutrition strategies to support hormonal balance.</p>
-        </div>
+<h3>Weight Management Programme</h3>
 
-        <div class="card">
-            <h3>Diabetes Care</h3>
-            <p>Simple meal plans designed for better blood sugar control.</p>
-        </div>
+<p>
 
-        <div class="card">
-            <h3>Sports Nutrition</h3>
-            <p>Performance-focused nutrition guidance.</p>
-        </div>
+Personalised nutrition plans, regular follow-ups, habit coaching, body composition analysis, lifestyle modifications, and sustainable fat-loss strategies.
 
-    </div>
+</p>
 
-</section>
+</div>
 
-<section id="testimonials">
+<div class="card">
 
-    <h2>Testimonials</h2>
+<h3>PCOS and Hormonal Health Programme</h3>
 
-    <div class="testimonial">
-        ★★★★★
-        <p>"I lost 8 kilograms while maintaining my energy levels."</p>
-    </div>
+<p>
 
-    <div class="testimonial">
-        ★★★★★
-        <p>"The meal plans were easy to follow and perfectly suited my lifestyle."</p>
-    </div>
+Comprehensive support for hormonal balance, menstrual health, insulin resistance, inflammation management, gut health, and sustainable lifestyle changes.
 
-</section>
+</p>
 
-<section id="faq">
+</div>
 
-    <h2>Frequently Asked Questions</h2>
+<div class="card">
 
-    <details>
-        <summary>Are the meal plans personalised?</summary>
-        <p>Yes, every plan is customised according to your goals and lifestyle.</p>
-    </details>
+<h3>Sports Nutrition Programme</h3>
 
-    <details>
-        <summary>Do you provide online consultations?</summary>
-        <p>Yes, consultations are available worldwide.</p>
-    </details>
+<p>
 
-    <details>
-        <summary>How often are follow-ups scheduled?</summary>
-        <p>Follow-ups are usually conducted every one to two weeks.</p>
-    </details>
+Tailored nutrition plans for athletes designed to improve performance, endurance, strength, hydration, recovery, and overall well-being.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Gut Health Programme</h3>
+
+<p>
+
+Evidence-based interventions focused on improving digestion, reducing inflammation, managing bloating, and supporting the gut microbiome.
+
+</p>
+
+</div>
+
+</div>
 
 </section>
 
-<section>
+<section id="bmi">
 
-    <h2>Instagram Feed</h2>
+<h2>BMI Calculator</h2>
 
-    <div class="instagram">
+<input id="height" type="number" placeholder="Height (cm)">
 
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+<br><br>
 
-    </div>
+<input id="weight" type="number" placeholder="Weight (kg)">
+
+<br><br>
+
+<button onclick="calculateBMI()">
+
+Calculate BMI
+
+</button>
+
+<br><br>
+
+<p id="result"></p>
 
 </section>
 
 <section id="contact">
 
-    <h2>Book a Consultation</h2>
+<h2>Contact</h2>
 
-    <p><strong>Email:</strong> yourmail@gmail.com</p>
-    <p><strong>Instagram:</strong> @yourusername</p>
-    <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
+<p><strong>Email:</strong> nakshatrasuroshi@gmail.com</p>
+
+<p><strong>Phone:</strong> 6366443170</p>
+
+<p><strong>Instagram:</strong> @nakshatra_.suroshi</p>
+
+<br>
+
+<a class="btn" href="https://instagram.com/nakshatra_.suroshi">
+
+Follow on Instagram
+
+</a>
 
 </section>
 
 <footer>
 
-    © 2026 Nakshatra Nutrition
+<p>© 2026 Nakshatra Nutrition</p>
 
 </footer>
 
+<script>
+
+function calculateBMI(){
+
+let height=document.getElementById("height").value/100;
+
+let weight=document.getElementById("weight").value;
+
+let bmi=weight/(height*height);
+
+document.getElementById("result").innerHTML="Your BMI is: "+bmi.toFixed(1);
+
+}
+
+</script>
+
 </body>
+
 </html>
