@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nakshatra Nutrition</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#faf5ef;
+    color:#4b382a;
+    line-height:1.7;
+}
+
+/* Navigation */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:white;
+    position:sticky;
+    top:0;
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:#5d4037;
+}
+
+/* Hero */
+
+header{
+    text-align:center;
+    padding:100px 10%;
+    background:linear-gradient(#efe2d1,#faf5ef);
+}
+
+.profile{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:25px;
+}
+
+header h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+header p{
+    max-width:700px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 30px;
+    border-radius:30px;
+    background:#8b6b61;
+    color:white;
+    text-decoration:none;
+}
+
+/* Sections */
+
+section{
+    padding:80px 10%;
+}
+
+h2{
+    margin-bottom:25px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.about{
+    background:#f4e8db;
+}
+
+/* Testimonials */
+
+.testimonial{
+    margin-bottom:20px;
+    padding:25px;
+    background:white;
+    border-radius:15px;
+}
+
+/* FAQ */
+
+details{
+    background:white;
+    padding:18px;
+    margin-bottom:15px;
+    border-radius:12px;
+}
+
+summary{
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* Instagram */
+
+.instagram{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.box{
+    height:200px;
+    border-radius:15px;
+    background:#dcc7aa;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:#5d4037;
+    color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Nakshatra Nutrition</div>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#programmes">Programmes</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header>
+
+    <!-- Replace with your own image -->
+    <img src="your-photo.jpg" class="profile">
+
+    <h1>Fuel Your Body, Nourish Your Life</h1>
+
+    <p>
+        Personalised nutrition plans designed to help you
+        build sustainable habits and achieve long-term wellness.
+    </p>
+
+    <a href="#contact" class="btn">Book a Consultation</a>
+
+</header>
+
+<section class="about" id="about">
+
+    <h2>About Me</h2>
+
+    <p>
+        Hello! I'm Nakshatra, a nutritionist passionate about
+        helping people build healthier lifestyles through
+        evidence-based nutrition.
+
+        Growing up in a family of yoga teachers and Ayurvedic
+        practitioners inspired me to understand the connection
+        between food, movement and overall well-being.
+
+        My goal is to make healthy eating simple, enjoyable and
+        sustainable.
+    </p>
+
+</section>
+
+<section id="programmes">
+
+    <h2>Programmes</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Weight Management</h3>
+            <p>Balanced plans for healthy and sustainable weight loss.</p>
+        </div>
+
+        <div class="card">
+            <h3>PCOS Management</h3>
+            <p>Nutrition strategies to support hormonal balance.</p>
+        </div>
+
+        <div class="card">
+            <h3>Diabetes Care</h3>
+            <p>Simple meal plans designed for better blood sugar control.</p>
+        </div>
+
+        <div class="card">
+            <h3>Sports Nutrition</h3>
+            <p>Performance-focused nutrition guidance.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="testimonials">
+
+    <h2>Testimonials</h2>
+
+    <div class="testimonial">
+        ★★★★★
+        <p>"I lost 8 kilograms while maintaining my energy levels."</p>
+    </div>
+
+    <div class="testimonial">
+        ★★★★★
+        <p>"The meal plans were easy to follow and perfectly suited my lifestyle."</p>
+    </div>
+
+</section>
+
+<section id="faq">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+        <summary>Are the meal plans personalised?</summary>
+        <p>Yes, every plan is customised according to your goals and lifestyle.</p>
+    </details>
+
+    <details>
+        <summary>Do you provide online consultations?</summary>
+        <p>Yes, consultations are available worldwide.</p>
+    </details>
+
+    <details>
+        <summary>How often are follow-ups scheduled?</summary>
+        <p>Follow-ups are usually conducted every one to two weeks.</p>
+    </details>
+
+</section>
+
+<section>
+
+    <h2>Instagram Feed</h2>
+
+    <div class="instagram">
+
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2>Book a Consultation</h2>
+
+    <p><strong>Email:</strong> yourmail@gmail.com</p>
+    <p><strong>Instagram:</strong> @yourusername</p>
+    <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
+
+</section>
+
+<footer>
+
+    © 2026 Nakshatra Nutrition
+
+</footer>
+
+</body>
+</html>
